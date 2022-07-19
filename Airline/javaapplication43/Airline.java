@@ -18,8 +18,7 @@ public class Airline {
           FileWriter fw = new FileWriter("C:\\\\Users\\\\usuario\\\\Documents\\\\NetBeansProjects\\\\JavaApplication43\\\\src\\\\javaapplication43\\\\avaliacaoOO.txt");
           BufferedWriter bw = new BufferedWriter(fw);
           System.out.println(Avaliacao.matricula);
-          bw.append("Nome: " + Avaliacao.nome + ", Matricula: " +Avaliacao.matricula + ", Nota: " + Avaliacao.nota+ "\n");
-          bw.flush();
+          bw.write("Nome: " + Avaliacao.nome + ", Matricula: " +Avaliacao.matricula + ", Nota: " + Avaliacao.nota+ "\n");
           bw.close();
       }catch(IOException e){
           System.out.println("AvaliacaoOO2022NaoInformadaException");
